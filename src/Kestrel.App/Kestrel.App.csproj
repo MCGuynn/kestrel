@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>Kestrel</AssemblyName>
+    <RootNamespace>Kestrel.App</RootNamespace>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <Version>0.1.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Floating on purpose for the first restore; pin to the resolved version afterward (see README). -->
+    <PackageReference Include="Scintilla5.NET" Version="*" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Kestrel.Core/Kestrel.Core.csproj" />
+  </ItemGroup>
+</Project>
